@@ -12,7 +12,7 @@ var firebaseConfig = {
   firebase.analytics();
 
 function requestSignUp() {
-    console.log('어 클릭하긴 했네?');
+    console.log('click check');
     const email = document.getElementById('exampleInputEmail').value
     const password = document.getElementById('exampleInputPassword').value
     const name = document.getElementById('exampleFirstName').value
@@ -21,7 +21,8 @@ function requestSignUp() {
     firebase.auth().createUserWithEmailAndPassword(email, password)
     .then((userCredential) => {
         if (userCredential) {
-            alert('Sign Up Successful');
+          alert('Sign Up Successful')
+          location.href = './login.html'
             firebase.firestore().collection('user-data').doc(email).set({
               name,
               university,
