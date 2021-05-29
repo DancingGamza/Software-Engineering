@@ -19,6 +19,7 @@ function requestLogin() {
     .then((userCredential) => {
         if (userCredential) {
             alert('Login Successful');
+            location.href = './index.html'
         }
       })
       .catch((error) => {
