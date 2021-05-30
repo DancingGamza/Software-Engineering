@@ -30,9 +30,11 @@ sequence diagram은 Use case별로 작성되었습니다. 각 use case별 sequen
 
 ### 3 - Use case 1 
 -----------------------------------------------------
+![sequence 1](https://user-images.githubusercontent.com/64300578/120112719-edec7180-c1b1-11eb-98bc-8028b48e8256.PNG)
 
 ### 3 - Use case 2
 -----------------------------------------------------
+![sequence 2](https://user-images.githubusercontent.com/64300578/120112732-fb096080-c1b1-11eb-83e3-36b2b6539385.PNG)
 
 
 ## 4. Class Diagram
