@@ -47,8 +47,7 @@ class diagram은 다음과 같습니다.
 
 ### 4 - Use case 2
 -----------------------------------------------------
-![class_diagram 2](https://user-images.githubusercontent.com/64300578/120112224-ecba4500-c1af-11eb-8486-308c7180e549.jpg)
-
+![class_diagram 2](https://user-images.githubusercontent.com/64300578/120112261-14111200-c1b0-11eb-905b-09921d1d8158.jpg)
 
 ## 5. 주요 기능
 -----------------------------------------------------
@@ -121,6 +120,32 @@ class diagram은 다음과 같습니다.
 -----------------------------------------------------
 위의 형식에 데이터베이스에 저장되어있는 이메일과 비밀번호를 입력하게 되면 로그인에 성공하게 됩니다. 로그인을
 성공했다는 메시지를 클릭하면 자동으로 메인 페이지로 넘어가게 됩니다.
+
+## 6. Built With
+-----------------------------------------------------
++ 이재민
+  + Create FinalREADME.md
+  + Write backend code
+  + make use case
+  + make domain model
+  + make class diagram
+  + make Database for project
+
++ 신예송
+  + Write frontend code
+  + Implement frontend layout
+  + make use case
+  + make domain model
+  + make sequence diagram
+
+-----------------------------------------------------
+## Acknowledgments / 프로젝트를 하면서 느낀점 및 어려웠던 점
+* 이재민
+  * Database부분을 이전에 배운 Mysql로 구현하려고 했었는데 local web에서는 fetch가 구현되지 않아서 중간에 firebase로 바꾼점이 아쉽습니다. 
+  * 처음으로 프로젝트를 하게 되면서 생각보다 한 프로젝트를 완성하는데 많은 구상단계와 시간, 노력이 필요하다는 것을 알게되었습니다.
+  * 조금 더 서둘러서 개발을 하였다면 완성도 높은 프로토타입을 구현해낼수 있었을 것같은데 마무리를 완전히 짓지 못해서 조금은 아쉽습니다.
+  * 한 학기동안 같은 팀으로서 의견을 잘 조율하면서 같이 개발해주신 예송님께 감사드립니다.
+
 
 
 
