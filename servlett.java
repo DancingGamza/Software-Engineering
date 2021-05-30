@@ -1,5 +1,4 @@
 package is;
-
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
@@ -11,7 +10,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
- 
 @WebServlet("/servlett")
 public class servlett extends HttpServlet 
 {
@@ -27,8 +25,7 @@ public class servlett extends HttpServlet
             i++;
             PrintWriter out = response.getWriter();
             response.setContentType("text/html");
-            String tag= request.getParameter("combo");
-            
+            String tag= request.getParameter("combo");            
             Class.forName("com.mysql.jdbc.Driver");
             con=DriverManager.getConnection("jdbc:mysql://localhost/industry","root","123qqpp!!");
             pst = con.prepareStatement("select id,name,location1,location2,visitable,details,category from company where tag=?");
@@ -44,11 +41,9 @@ public class servlett extends HttpServlet
             out.println("<th>Location1</th>");
             out.println("<th>Location2</th>");
             out.println("<th>Visitable time</th>");
-            out.println("<th>Industry details</th>");
-            
+            out.println("<th>Industry details</th>");           
             out.println("<th>Category</th>");
-            out.println("</tr>");
-              
+            out.println("</tr>");              
               while(rs.next())
               {
             	  out.println("<tr>");
@@ -57,26 +52,18 @@ public class servlett extends HttpServlet
                   out.println("<td>" + rs.getString("location1") + "</td> ");
                   out.println("<td>" + rs.getString("location2") + "</td> ");
                   out.println("<td>" + rs.getString("visitable") + "</td> ");
-                  out.println("<td>" + rs.getString("details") + "</td> ");
-                  
-                  out.println("<td>" + rs.getString("category") + "</td> ");
-                  
-                  out.println("</tr>");
-                  
+                  out.println("<td>" + rs.getString("details") + "</td> ");              
+                  out.println("<td>" + rs.getString("category") + "</td> ");                  
+                  out.println("</tr>");                 
               }
-              out.println("</table>");
-        
+              out.println("</table>");       
                } 
-            catch (ClassNotFoundException ex) {
-           
+            catch (ClassNotFoundException ex) {          
         }catch (Exception e) 
         { throw new ServletException("error", e); }
-    }
-    
+    }  
     public void destory()
     {
         i = 0;
-    }
- 
-    
+    }    
 }
