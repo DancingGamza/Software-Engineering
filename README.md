@@ -46,6 +46,8 @@ Class diagram도 Use case별로 작성되었습니다. 각 use case별 sequence 
 ![image](https://user-images.githubusercontent.com/74705447/120143304-d7c6cb80-c21a-11eb-84fb-0f28b5550f03.png)
 ![image](https://user-images.githubusercontent.com/74705447/120143322-e2816080-c21a-11eb-8d08-82550ce26ab7.png)
 ![image](https://user-images.githubusercontent.com/74705447/120143349-f0cf7c80-c21a-11eb-9a1f-84d2ed2af9bc.png)
+![image](https://user-images.githubusercontent.com/74705447/120145351-51ac8400-c21e-11eb-979d-74912b1a839a.png)
+
 ### 5- 4. 산업체 방문 알림
 ![image](https://user-images.githubusercontent.com/74705447/120143729-9d116300-c21b-11eb-91f0-a3c0a3483ddf.png)
 ![image](https://user-images.githubusercontent.com/74705447/120143743-a69acb00-c21b-11eb-91ca-cbb9b32c9750.png)
