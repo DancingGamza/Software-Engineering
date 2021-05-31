@@ -133,6 +133,7 @@ class diagram은 다음과 같습니다.
   + make Database for project
 
 + 신예송
+  + create README.md
   + Write frontend code
   + Implement frontend layout
   + make use case
