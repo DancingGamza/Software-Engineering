@@ -10,14 +10,15 @@
 ## 2. Domain Models
 ### 2- Use case 1: 산업체 검색
 ### 태그 선택 방식
+### SearchHelper
 ```java
 String tag= request.getParameter("combo");
 ```
-
 ```java
             Class.forName("com.mysql.jdbc.Driver");
             con=DriverManager.getConnection("jdbc:mysql://localhost/industry","root","123qqpp!!");
 ```
+### IndustryDB
 ```java         
             pst = con.prepareStatement("select id,name,location1,location2,visitable,details,category from company where tag=?");
             pst.setString(1, tag);
@@ -31,16 +32,18 @@ String tag= request.getParameter("combo");
                   out.println("<td>" + rs.getString("details") + "</td> ");                 
                   out.println("<td>" + rs.getString("category") + "</td> ");
  ``` 
- ### 산업체 이름 입력 방식
+### 산업체 이름 입력 방식
+### SearchHelper
 ```java
    String tag= request.getParameter("q");
 ```
+### IndustryDB
 ```java
             pst = con.prepareStatement("select id,name,location1,location2,visitable,details,tag,category from company where name = ? ");          
             pst.setString(1, tag);
  ```
  ```java
-      String name = request.getParameter("name");
+      	String name = request.getParameter("name");
     	String npeople = request.getParameter("npeople");
     	String date = request.getParameter("date");
     	String time = request.getParameter("time");
@@ -50,22 +53,34 @@ String tag= request.getParameter("combo");
 		  llist.setDate(date);
 		  llist.setTime(time);
  ```     
-### 2- Use case 2: 산업체 방문 예약      
+### 2- Use case 2: 산업체 방문 예약
+### ReservationDB
 ```java    
     String INSERT_USERS_SQL = "INSERT INTO list" +
 	" (id, name, npeople, date, time) VALUES " +
 				" (?, ?, ?, ?, ?);";
-```      
+```
 ```java       
- preparedStatement.setInt(1, 2);
+ 			preparedStatement.setInt(1, 2);
 			preparedStatement.setString(2, llist.getName());
 			preparedStatement.setString(3, llist.getNpeople());
 			preparedStatement.setString(4, llist.getDate());
 			preparedStatement.setString(5, llist.getTime());   
 ```      
 ### 2- Use case 3: 마이페이지
+### Alarm Operator
+index.html
+```html
+<div class="modal-body">
+      visit date: 6/1
+      visit time: 2PM
+      visit id: 2
+      npeople: 1
+      industry id: 3
+      industry name : GS
+      industry location : gstower
+    </div>
 ```
-
 ## 3. Sequence Diagram
 sequence diagram은 Use case별로 작성되었습니다. 각 use case별 sequence diagram은 다음과 같습니다.
 ### 3- Use case 1
