@@ -42,15 +42,11 @@ Class diagram도 Use case별로 작성되었습니다. 각 use case별 sequence 
 
 
 ## 6. Built With
-*서비스 안내
-services.html
+*서비스 안내: services.html
 *산업체 검색
- *태그 선택 방식
- servlett.java, i.jsp
- *산업체 이름 입력 방식
- ir2.java, ir.jsp
-*산업체 방문 예약
-listServlet.java, listDao.java, list.java, listdetails.jsp, listreservation.jsp
+ *태그 선택 방식: servlett.java, i.jsp
+ *산업체 이름 입력 방식: ir2.java, ir.jsp
+*산업체 방문 예약: listServlet.java, listDao.java, list.java, listdetails.jsp, listreservation.jsp
 *산업체 방문 알림
 
 
