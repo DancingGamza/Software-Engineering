@@ -9,7 +9,7 @@
 방문자는 자신의 예약된 방문 정보를 확인할 수 있습니다.
 ## 2. Domain Models
 ### 2- Use case 1: 산업체 검색
-### 태그 선택 방식
+### 2.1 태그 선택 방식
 ### SearchHelper
 ```java
 String tag= request.getParameter("combo");
@@ -32,7 +32,7 @@ String tag= request.getParameter("combo");
                   out.println("<td>" + rs.getString("details") + "</td> ");                 
                   out.println("<td>" + rs.getString("category") + "</td> ");
  ``` 
-### 산업체 이름 입력 방식
+### 2.2 산업체 이름 입력 방식
 ### SearchHelper
 ```java
    String tag= request.getParameter("q");
