@@ -125,7 +125,7 @@ class diagram은 다음과 같습니다.
 ## 6. Built With
 -----------------------------------------------------
 + 이재민
-  + Create FinalREADME.md
+  + Create team1 README.md
   + Write backend code
   + make use case
   + make domain model
@@ -133,7 +133,7 @@ class diagram은 다음과 같습니다.
   + make Database for project
 
 + 신예송
-  + create README.md
+  + create main README.md
   + Write frontend code
   + Implement frontend layout
   + make use case
