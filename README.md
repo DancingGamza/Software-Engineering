@@ -11,14 +11,21 @@
 ### 2- Use case 1: 산업체 검색
 ### 2.1 태그 선택 방식
 ### SearchHelper
+servlett.java
 ```java
 String tag= request.getParameter("combo");
 ```
+### IndustryDB
+i.jsp
+``java
+	    pst = con.prepareStatement("select distinct tag from company");
+	    rs=pst.executeQuery()
+```	    
+servlett.java
 ```java
             Class.forName("com.mysql.jdbc.Driver");
             con=DriverManager.getConnection("jdbc:mysql://localhost/industry","root","123qqpp!!");
 ```
-### IndustryDB
 ```java         
             pst = con.prepareStatement("select id,name,location1,location2,visitable,details,category from company where tag=?");
             pst.setString(1, tag);
@@ -34,15 +41,55 @@ String tag= request.getParameter("combo");
  ``` 
 ### 2.2 산업체 이름 입력 방식
 ### SearchHelper
+ir.jsp
+```jsp
+<input type="text" name="q"/>
+```
+ir2.java
 ```java
    String tag= request.getParameter("q");
 ```
 ### IndustryDB
+ir2.java
 ```java
             pst = con.prepareStatement("select id,name,location1,location2,visitable,details,tag,category from company where name = ? ");          
-            pst.setString(1, tag);
- ```
- ```java
+            pst.setString(1, tag);	
+	    
+``` 
+```java
+	          out.println("<tr>");
+                  out.println("<td>" + rs.getInt("id") + "</td> ");
+                  out.println("<td>" + rs.getString("name") + "</td> ");
+                  out.println("<td>" + rs.getString("location1") + "</td> ");
+                  out.println("<td>" + rs.getString("location2") + "</td> ");
+                  out.println("<td>" + rs.getString("visitable") + "</td> ");
+                  out.println("<td>" + rs.getString("details") + "</td> ");
+                  out.println("<td>" + rs.getString("tag") + "</td> ");
+                  out.println("<td>" + rs.getString("category") + "</td> ");
+```		  
+### 2- Use case 2: 산업체 방문 예약
+### PostProcessor
+listreservation.jsp
+```jsp
+    <tr>
+     <td>name</td>
+     <td><input type="text" name="name" /></td>
+    </tr>
+    <tr>
+     <td>npeople</td>
+     <td><input type="text" name="npeople" /></td>
+    </tr>
+    <tr>
+     <td>date</td>
+     <td><input type="text" name="date" /></td>
+    </tr>
+    <tr>
+     <td>time</td>
+     <td><input type="text" name="time" /></td>
+    </tr>
+```
+listServlet.java
+```java
       	String name = request.getParameter("name");
     	String npeople = request.getParameter("npeople");
     	String date = request.getParameter("date");
@@ -51,10 +98,10 @@ String tag= request.getParameter("combo");
 		  llist.setName(name);
 		  llist.setNpeople(npeople);
 		  llist.setDate(date);
-		  llist.setTime(time);
- ```     
-### 2- Use case 2: 산업체 방문 예약
+		  llist.setTime(time);v
+```	
 ### ReservationDB
+listDao.java
 ```java    
     String INSERT_USERS_SQL = "INSERT INTO list" +
 	" (id, name, npeople, date, time) VALUES " +
