@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Show my reservation details</title>
+  <link href="styles.css" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <button data-modal-target="#modal">Open my reservation details</button>
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="title">Do not forget!</div>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body">
+      visit date: 6/1
+      visit time: 2PM
+      visit id: 2
+      npeople: 1
+      industry id: 3
+      industry name : GS
+      industry location : gstower
+    </div>
+  </div>
+  <div id="overlay"></div>
+</body>
+</html>
