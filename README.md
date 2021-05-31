@@ -10,8 +10,26 @@
 ## 2. Domain Models
 
 ## 3. Sequence Diagram
+sequence diagram은 Use case별로 작성되었습니다. 각 use case별 sequence diagram은 다음과 같습니다.
+### 3- Use case 1
+![image](https://user-images.githubusercontent.com/74705447/120124821-0a5bce80-c1f1-11eb-9604-13f1e1093f4e.png)
+![image](https://user-images.githubusercontent.com/74705447/120124906-79392780-c1f1-11eb-99fc-53278ae0f96a.png)
+![image](https://user-images.githubusercontent.com/74705447/120124865-43943e80-c1f1-11eb-9c93-435d5ce178d8.png)
+
+### 3- Use case 2
+
+![image](https://user-images.githubusercontent.com/74705447/120124897-71798300-c1f1-11eb-99e5-9d0786089e66.png)
+![image](https://user-images.githubusercontent.com/74705447/120124915-80f8cc00-c1f1-11eb-84c8-25f36e5f782f.png)
+### 3- Use case 3
+
+![image](https://user-images.githubusercontent.com/74705447/120124946-9a9a1380-c1f1-11eb-9209-1ef99b4380eb.png)
 
 ## 4. Class Diagram
+Class diagram도 Use case별로 작성되었습니다. 각 use case별 sequence diagram은 다음과 같습니다.
+
+### 4- Use case 1
+### 4- Use case 2
+### 4- Use case 3
 
 ## 5. 주요 기능
 
