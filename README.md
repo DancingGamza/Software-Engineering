@@ -8,6 +8,63 @@
 ### 1- Use case 3: 마이페이지
 방문자는 자신의 예약된 방문 정보를 확인할 수 있습니다.
 ## 2. Domain Models
+### 2- Use case 1: 산업체 검색
+### 태그 선택 방식
+```java
+String tag= request.getParameter("combo");
+```
+
+```java
+            Class.forName("com.mysql.jdbc.Driver");
+            con=DriverManager.getConnection("jdbc:mysql://localhost/industry","root","123qqpp!!");
+```
+```java         
+            pst = con.prepareStatement("select id,name,location1,location2,visitable,details,category from company where tag=?");
+            pst.setString(1, tag);
+ ```
+ ```java
+                  out.println("<td>" + rs.getInt("id") + "</td> ");
+                  out.println("<td>" + rs.getString("name") + "</td> ");
+                  out.println("<td>" + rs.getString("location1") + "</td> ");
+                  out.println("<td>" + rs.getString("location2") + "</td> ");
+                  out.println("<td>" + rs.getString("visitable") + "</td> ");
+                  out.println("<td>" + rs.getString("details") + "</td> ");                 
+                  out.println("<td>" + rs.getString("category") + "</td> ");
+ ``` 
+ ### 산업체 이름 입력 방식
+```java
+   String tag= request.getParameter("q");
+```
+```java
+            pst = con.prepareStatement("select id,name,location1,location2,visitable,details,tag,category from company where name = ? ");          
+            pst.setString(1, tag);
+ ```
+ ```java
+      String name = request.getParameter("name");
+    	String npeople = request.getParameter("npeople");
+    	String date = request.getParameter("date");
+    	String time = request.getParameter("time");
+		  list llist = new list();		
+		  llist.setName(name);
+		  llist.setNpeople(npeople);
+		  llist.setDate(date);
+		  llist.setTime(time);
+ ```     
+### 2- Use case 2: 산업체 방문 예약      
+```java    
+    String INSERT_USERS_SQL = "INSERT INTO list" +
+	" (id, name, npeople, date, time) VALUES " +
+				" (?, ?, ?, ?, ?);";
+```      
+```java       
+ preparedStatement.setInt(1, 2);
+			preparedStatement.setString(2, llist.getName());
+			preparedStatement.setString(3, llist.getNpeople());
+			preparedStatement.setString(4, llist.getDate());
+			preparedStatement.setString(5, llist.getTime());   
+```      
+### 2- Use case 3: 마이페이지
+```
 
 ## 3. Sequence Diagram
 sequence diagram은 Use case별로 작성되었습니다. 각 use case별 sequence diagram은 다음과 같습니다.
