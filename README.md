@@ -30,28 +30,32 @@ Class diagram도 Use case별로 작성되었습니다. 각 use case별 sequence 
 ![image](https://user-images.githubusercontent.com/74705447/120125995-c6b79380-c1f5-11eb-8f5a-6621a0cf5104.png)
 ## 5. 주요 기능
 ### 5- 1. 서비스 안내
+서비스를 한 눈에 알아볼 수 있습니다.
 ![image](https://user-images.githubusercontent.com/74705447/120143426-10ff3b80-c21b-11eb-9e16-694af39e597b.png)
 ### 5- 2. 산업체 검색
+산업체 검색 방식은 2가지가 있습니다.
+산업체DB는 다음과 같습니다.
 ![image](https://user-images.githubusercontent.com/74705447/120143614-62a7c600-c21b-11eb-89bc-f4cb5bb8fc3c.png)
 ### 5- 2.1 태그 선택 방식
+산업체 태그를 선택하면 산업체가 검색되어 산업체 정보를 볼 수 있습니다.
 ![image](https://user-images.githubusercontent.com/74705447/120143650-73f0d280-c21b-11eb-9bae-254b47e81da7.png)
 ![image](https://user-images.githubusercontent.com/74705447/120143664-7ce1a400-c21b-11eb-9c27-90722281f73f.png)
-
 ### 5- 2.2 산업체 이름 입력 방식
+산업체 이름을 입력하면 산업체가 검색되어 산업체 정보를 볼 수 있습니다.
 ![image](https://user-images.githubusercontent.com/74705447/120143681-866b0c00-c21b-11eb-9f2b-abbfc72daf43.png)
 ![image](https://user-images.githubusercontent.com/74705447/120143696-8e2ab080-c21b-11eb-9c9b-5ca78ba129a2.png)
-
 ### 5- 3. 산업체 방문 예약
+예약 정보를 입력하면 예약DB에 저장됩니다.
 ![image](https://user-images.githubusercontent.com/74705447/120143396-06dd3d00-c21b-11eb-9c0c-a68478404501.png)
 ![image](https://user-images.githubusercontent.com/74705447/120143304-d7c6cb80-c21a-11eb-84fb-0f28b5550f03.png)
 ![image](https://user-images.githubusercontent.com/74705447/120143322-e2816080-c21a-11eb-8d08-82550ce26ab7.png)
 ![image](https://user-images.githubusercontent.com/74705447/120143349-f0cf7c80-c21a-11eb-9a1f-84d2ed2af9bc.png)
+예약DB는 다음과 같습니다.
 ![image](https://user-images.githubusercontent.com/74705447/120145351-51ac8400-c21e-11eb-979d-74912b1a839a.png)
-
 ### 5- 4. 산업체 방문 알림
+예약 정보를 손쉽게 확인할 수 있습니다.
 ![image](https://user-images.githubusercontent.com/74705447/120143729-9d116300-c21b-11eb-91f0-a3c0a3483ddf.png)
 ![image](https://user-images.githubusercontent.com/74705447/120143743-a69acb00-c21b-11eb-91ca-cbb9b32c9750.png)
-
 ## 6. Built With
 ### 6- 1. 서비스 안내: services.html
 ### 6- 2. 산업체 검색
