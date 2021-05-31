@@ -64,8 +64,7 @@ Class diagram도 Use case별로 작성되었습니다. 각 use case별 sequence 
 ### 6- 3. 산업체 방문 예약: listServlet.java, listDao.java, list.java, listdetails.jsp, listreservation.jsp
 ### 6- 4. 산업체 방문 알림: index.html, script.js, styles.css
 ## 7. Ackonwledgements
-
-
+이주영: 웹 프로그래밍을 처음 해보게 되어 걱정을 많이 했는데 Java EE IDE, JSP, Apache Tomcat, JSTL, Servlet API 등 새로운 도구들을 사용해볼 수 있는 좋은 기회가 되었습니다. MySQL과 JDBC 연동은 데이터베이스설계와 데이터베이스시스템에서 배웠던 적이 있어 조금이나마 수월하게 할 수 있었고 이번 프로젝트로 더 확실하게 이해할 수 있었습니다. 웹 페이지를 직접 만들어보니 신기하고 재밌었습니다. Use case부터 차근차근 단계를 걸쳐 설계를 하고 구현을 하다보니 목적에 대해 혼란스러워 하지 않고 코드를 작성할 수 있었습니다. 최다 인원이 의견을 조율하여 프로젝트를 진행하였는데 매주 월,목 회의를 통해 원활하게 진행할 수 있었습니다. Use case, Domain Model, Diagram 작성을 어려워하던 저에게 많은 도움을 주신 민지환님께 감사드립니다. 
 
 
 
