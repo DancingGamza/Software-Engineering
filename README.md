@@ -34,19 +34,22 @@ Class diagram도 Use case별로 작성되었습니다. 각 use case별 sequence 
 ### 5- 2. 산업체 검색
 ![image](https://user-images.githubusercontent.com/74705447/120143614-62a7c600-c21b-11eb-89bc-f4cb5bb8fc3c.png)
 ### 5- 2.1 태그 선택 방식
+![image](https://user-images.githubusercontent.com/74705447/120143650-73f0d280-c21b-11eb-9bae-254b47e81da7.png)
 ![image](https://user-images.githubusercontent.com/74705447/120143664-7ce1a400-c21b-11eb-9c27-90722281f73f.png)
-![image](https://user-images.githubusercontent.com/74705447/120143681-866b0c00-c21b-11eb-9f2b-abbfc72daf43.png)
+
 ### 5- 2.2 산업체 이름 입력 방식
+![image](https://user-images.githubusercontent.com/74705447/120143681-866b0c00-c21b-11eb-9f2b-abbfc72daf43.png)
 ![image](https://user-images.githubusercontent.com/74705447/120143696-8e2ab080-c21b-11eb-9c9b-5ca78ba129a2.png)
-![image](https://user-images.githubusercontent.com/74705447/120143729-9d116300-c21b-11eb-91f0-a3c0a3483ddf.png)
+
 ### 5- 3. 산업체 방문 예약
 ![image](https://user-images.githubusercontent.com/74705447/120143396-06dd3d00-c21b-11eb-9c0c-a68478404501.png)
 ![image](https://user-images.githubusercontent.com/74705447/120143304-d7c6cb80-c21a-11eb-84fb-0f28b5550f03.png)
 ![image](https://user-images.githubusercontent.com/74705447/120143322-e2816080-c21a-11eb-8d08-82550ce26ab7.png)
 ![image](https://user-images.githubusercontent.com/74705447/120143349-f0cf7c80-c21a-11eb-9a1f-84d2ed2af9bc.png)
 ### 5- 4. 산업체 방문 알림
+![image](https://user-images.githubusercontent.com/74705447/120143729-9d116300-c21b-11eb-91f0-a3c0a3483ddf.png)
 ![image](https://user-images.githubusercontent.com/74705447/120143743-a69acb00-c21b-11eb-91ca-cbb9b32c9750.png)
-![image](https://user-images.githubusercontent.com/74705447/120143650-73f0d280-c21b-11eb-9bae-254b47e81da7.png)
+
 ## 6. Built With
 ### 6- 1. 서비스 안내: services.html
 ### 6- 2. 산업체 검색
