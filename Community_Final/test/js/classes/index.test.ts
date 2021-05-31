@@ -1,14 +1,20 @@
-import * as domainModel from "../../../public/js/classes"
+import {serviceDisplay} from "../../../public/js/classes"
+
+jest.mock("../../../public/js/classes")
 
 describe('serviceDisplay test suite',()=>{
-    let serviceDisplayT : domainModel.serviceDisplay
+    let serviceDisplayMock : serviceDisplay= {
+        ctrlEditDisplayHtml : jest.fn(),
+        hello : jest.fn()
+    }
     beforeEach(()=>{
-        serviceDisplayT = new domainModel.serviceDisplay()
+        serviceDisplayMock = new serviceDisplay()
     })
     afterEach(()=>{
         jest.clearAllMocks();
     })
-    test('test ctrlEditDisplayHtml func',()=>{
-        console.log("hello")
+    test('ctrlEditDisplayHtml to be called',()=>{
+        expect(serviceDisplayMock.hello).toBeCalled()
     })
+    
 })
