@@ -17,7 +17,7 @@ String tag= request.getParameter("combo");
 ```
 ### IndustryDB
 i.jsp
-``java
+```java
 	    pst = con.prepareStatement("select distinct tag from company");
 	    rs=pst.executeQuery()
 ```	    
